@@ -1,0 +1,21 @@
+cabal-version:       3.0
+name:                dummy
+version:             0.1.0.0
+author:              Gautier DI FOLCO
+maintainer:          gautier.difolco@gmail.com
+category:            Data
+build-type:          Simple
+license:             ISC
+license-file:        LICENSE
+synopsis:            Vulnerable Haskell package
+description:         Vulnerable Haskell package.
+Homepage:            http://github.com/blackheaven/vulnerable-sandbox
+
+executable exe
+  -- type: exitcode-stdio-1.0
+  main-is: Main.hs
+  hs-source-dirs: app
+  build-depends:
+      base
+    , aeson == 1.*
+  default-language: Haskell2010
