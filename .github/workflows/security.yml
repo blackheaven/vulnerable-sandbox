@@ -18,6 +18,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - uses: haskell-actions/setup@v2
+        with:
+          ghc-version: '9.0'
+
       - name: Run Haskell Security Action
         uses: blackheaven/haskell-security-action@master
         with:
